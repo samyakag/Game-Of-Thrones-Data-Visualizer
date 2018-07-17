@@ -31,7 +31,13 @@ def charachter_deaths():
 
 
 def charachter_predictions():
-    pass
-
+    filename = "character-predictions.csv"
+    labels = ["isNoble", "isPopular", "isAlive"]
+    remove_columns = [[0, 5, 6, 8, 9, 10, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], [0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17], [0, 5, 7, 8, 9, 10, 11]]
+    for count,label in enumerate(labels):
+        x, y = process_data(filename, label, remove_columns[count], 0)
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.05, random_state=42)
+        perform_TSNE(x_test, y_test)
 battles()
 charachter_deaths()
+charachter_predictions()
