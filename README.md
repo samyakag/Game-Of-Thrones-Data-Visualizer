@@ -1,9 +1,9 @@
-#Visualize Game Of Thrones Data
+# Visualize Game Of Thrones Data
 
-#Overview
+# Overview
 
 This is the code that visualizes GOT data and plots the graph of features in 2D using TSNE on the multi-dimensional data.
-##Dependencies
+## Dependencies
 
 * pandas(http://pandas.pydata.org/) 
 * numpy (http://www.numpy.org/) 
@@ -12,7 +12,7 @@ This is the code that visualizes GOT data and plots the graph of features in 2D 
 
 Install dependencies via '[pip](https://pypi.python.org/pypi/pip) install'. (i.e pip install pandas). 
 
-##Usage
+## Usage
 
 To run this code, just run the following in terminal: 
 
